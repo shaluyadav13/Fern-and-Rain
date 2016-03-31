@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  Yadav_BotanicalAssignment
 //
 //  Created by Yadav,Shalu on 3/30/16.
@@ -8,11 +8,16 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class RainViewController: UIViewController {
 
+    var color:UIColor!
+    var radius:Double!
+    var numberOfRaindrops:Int!
+    
+    @IBOutlet weak var rainView: RainView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,9 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
 
 }
 

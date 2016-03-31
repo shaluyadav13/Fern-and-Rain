@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Yadav_BotanicalAssignment
 //
 //  Created by Yadav,Shalu on 3/30/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FernViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
