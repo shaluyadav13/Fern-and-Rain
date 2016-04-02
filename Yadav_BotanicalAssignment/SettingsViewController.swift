@@ -21,7 +21,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let indexColor:Int = selectColorSC.selectedSegmentIndex
+        colorSelected = selectColorSC.titleForSegmentAtIndex(indexColor)
         // Do any additional setup after loading the view.
     }
     
@@ -37,13 +38,13 @@ class SettingsViewController: UIViewController {
     
     @IBAction func done(sender: UIBarButtonItem) {
         if numRainDropsTF.text != ""{
-            rainVC.numberOfRaindrops = Int(numRainDropsTF.text!)
+            rainVC.numberOfRaindrops = Int(numRainDropsTF.text!)!
         } else {
             rainVC.numberOfRaindrops = 0
         }
         
         rainVC.radius = Double(radiusRainDrop.value)
-        rainVC.color = colorDict[colorSelected]
+        rainVC.color = colorDict[colorSelected]!
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
