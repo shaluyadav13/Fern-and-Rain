@@ -10,9 +10,14 @@ import UIKit
 
 class FernViewController: UIViewController {
 
+    @IBOutlet weak var fernView: FernView!
+    var fernMaker:FernMaker!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        fernMaker = FernMaker()
+        fernView.fernMaker = fernMaker
+        fernMaker.generateFern(1000)
     }
 
     override func didReceiveMemoryWarning() {

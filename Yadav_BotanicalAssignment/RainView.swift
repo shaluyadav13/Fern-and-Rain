@@ -22,16 +22,32 @@ class RainView: UIView {
     override func drawRect(rect: CGRect) {
         // Drawing code
         super.drawRect(rect)
+        var colorSel:UIColor = UIColor.yellowColor()
+        var numRainDrop:Int = 1000
+        var radius:Double = 1.0
         let bp:UIBezierPath = UIBezierPath()
-        print(rainVC.color)
-        print(rainVC.radius)
-        print(rainVC.numberOfRaindrops)
-        rainVC.color.setStroke()
-        rainVC.color.setFill()
+        if let _ = rainVC.color {
+            colorSel = rainVC.color
+           print(rainVC.color)
+        }
+        
+        if let _ = rainVC.numberOfRaindrops {
+            numRainDrop = rainVC.numberOfRaindrops
+            print(rainVC.numberOfRaindrops)
+        }
+        
+        if let _ = rainVC.radius {
+            radius = rainVC.radius
+            print(rainVC.radius)
+        }
+        
+        
+        colorSel.setStroke()
+        colorSel.setFill()
         var point:CGPoint = t0()
-        for _:Int in 1.stride(to: rainVC.numberOfRaindrops, by: 1){
+        for _:Int in 1.stride(to: numRainDrop, by: 1){
             bp.moveToPoint(point)
-            bp.addArcWithCenter(point, radius: CGFloat(rainVC.radius), startAngle: 0.0, endAngle: 6.28, clockwise: true)
+            bp.addArcWithCenter(point, radius: CGFloat(radius), startAngle: 0.0, endAngle: 6.28, clockwise: true)
             bp.fill()
             let index:Int = random()%4
             if funcArray[index] == "t0" {
@@ -44,10 +60,11 @@ class RainView: UIView {
                 point = t3(point)
             }
         }
+        
     }
 
     func t0()->CGPoint{
-        return CGPoint(x: random()%100, y: random()%100)
+        return CGPoint(x: random()%1000, y: random()%1000)
     }
 
     func t1(point:CGPoint)->CGPoint{

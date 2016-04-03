@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E017C5851CB1D05200701B0E /* Leaf-25.png in Resources */ = {isa = PBXBuildFile; fileRef = E017C5841CB1D05200701B0E /* Leaf-25.png */; };
+		E017C5871CB1D05900701B0E /* Rain-25.png in Resources */ = {isa = PBXBuildFile; fileRef = E017C5861CB1D05900701B0E /* Rain-25.png */; };
 		E0BDC20D1CACC26B000A2BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BDC20C1CACC26B000A2BD2 /* AppDelegate.swift */; };
 		E0BDC20F1CACC26B000A2BD2 /* RainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BDC20E1CACC26B000A2BD2 /* RainViewController.swift */; };
 		E0BDC2111CACC26B000A2BD2 /* FernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BDC2101CACC26B000A2BD2 /* FernViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E017C5841CB1D05200701B0E /* Leaf-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leaf-25.png"; sourceTree = "<group>"; };
+		E017C5861CB1D05900701B0E /* Rain-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rain-25.png"; sourceTree = "<group>"; };
 		E0BDC2091CACC26B000A2BD2 /* Yadav_BotanicalAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yadav_BotanicalAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BDC20C1CACC26B000A2BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0BDC20E1CACC26B000A2BD2 /* RainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +74,9 @@
 				E0BDC2121CACC26B000A2BD2 /* Main.storyboard */,
 				E0BDC2151CACC26B000A2BD2 /* Assets.xcassets */,
 				E0BDC2171CACC26B000A2BD2 /* LaunchScreen.storyboard */,
+				E017C5841CB1D05200701B0E /* Leaf-25.png */,
 				E0BDC21A1CACC26B000A2BD2 /* Info.plist */,
+				E017C5861CB1D05900701B0E /* Rain-25.png */,
 				E0BDC2201CACC37E000A2BD2 /* SettingsViewController.swift */,
 				E0BDC2221CACC456000A2BD2 /* RainView.swift */,
 				E0BDC2241CACC47A000A2BD2 /* FernView.swift */,
@@ -139,7 +145,9 @@
 			files = (
 				E0BDC2191CACC26B000A2BD2 /* LaunchScreen.storyboard in Resources */,
 				E0BDC2161CACC26B000A2BD2 /* Assets.xcassets in Resources */,
+				E017C5851CB1D05200701B0E /* Leaf-25.png in Resources */,
 				E0BDC2141CACC26B000A2BD2 /* Main.storyboard in Resources */,
+				E017C5871CB1D05900701B0E /* Rain-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 				E0BDC21F1CACC26B000A2BD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

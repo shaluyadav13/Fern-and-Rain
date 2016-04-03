@@ -16,27 +16,16 @@ class RainViewController: UIViewController {
     
     @IBOutlet weak var rainView: RainView!
     
-    required init(coder aDecoder: NSCoder!) {
-        super.init(coder: aDecoder)!
-    }
-    
-    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        rainView = RainView()
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    convenience init() {
-        self.init(nibName: nil, bundle: nil)
-        self.color = UIColor.yellowColor()
-        self.radius = 0.5
-        self.numberOfRaindrops = 100
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         rainView.rainVC = self
      
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        rainView.setNeedsDisplay()
     }
     
     override func didReceiveMemoryWarning() {

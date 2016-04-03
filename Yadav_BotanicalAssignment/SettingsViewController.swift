@@ -45,6 +45,7 @@ class SettingsViewController: UIViewController {
         
         rainVC.radius = Double(radiusRainDrop.value)
         rainVC.color = colorDict[colorSelected]!
+        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
