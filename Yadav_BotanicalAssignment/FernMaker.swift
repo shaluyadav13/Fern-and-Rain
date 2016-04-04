@@ -15,18 +15,10 @@ class FernMaker  {
  
     
     func generateFern(numberOfPoints:Int){
-//        
-//        let colorSel:UIColor = UIColor.yellowColor()
-//        let radius:Double = 0.5
-//        let bp:UIBezierPath = UIBezierPath()
-//        colorSel.setStroke()
-//        colorSel.setFill()
+
         var point:CGPoint = t0()
         points.append(point)
         for _:Int in 1.stride(to: numberOfPoints, by: 1){
-//            bp.moveToPoint(point)
-//            bp.addArcWithCenter(point, radius: CGFloat(radius), startAngle: 0.0, endAngle: 6.28, clockwise: true)
-//            bp.fill()
             let index:Int = random()%4
             if funcArray[index] == "t0" {
                 point = t0()
@@ -46,7 +38,7 @@ class FernMaker  {
     }
     
     func t0()->CGPoint{
-        return CGPoint(x: random()%1000, y: random()%1000)
+        return CGPoint(x: random()%1, y: random()%1)
     }
     
     func t1(point:CGPoint)->CGPoint{
